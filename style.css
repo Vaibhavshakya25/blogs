@@ -1,0 +1,73 @@
+:root{
+    --dark-red:rgba(227, 40, 40, 0.815);
+    --purple:#982ce4;
+    --white:white;
+}
+*{
+    margin:10;
+    padding:0;
+    box-sizing: border-box;
+    --blacki:black;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.heading{
+    width:90vw;
+    margin:10px auto;
+    text-align: center;
+}
+a{
+    width: 10vw;
+    text-decoration: none;
+    color: grey;
+}
+.section2{
+    margin:0px auto;
+    width:80vw;
+    height: 100%;
+    display: grid;
+    gap:20px;
+    grid-auto-rows: minmax(100px,200px);
+    grid-template-columns: repeat(2,1fr);
+}
+ .box{
+   width:100%;
+   height: 100%;
+   border: 2px solid grey;
+   box-shadow: 5px 5px 12px var(--purple);
+}
+ .box-heading{
+    color: rgb(8, 162, 209);
+    font-weight: bold;
+    justify-self: flex-start;
+    width: 100%;
+    margin-left: 5%;
+}
+.boxname{
+    margin-left: 5%;
+    width: 100%;
+    color: black;
+}
+.month{
+    margin-left: 5%;
+  color: grey;
+}
+ .card-disc{
+   margin-left: 5%;
+   color: black;
+}
+.box:hover{
+    background-color: aliceblue;
+    transform: scale(1.03);
+    transition: 0.3s;
+    background: linear-gradient(45deg,rgb(247, 247, 247),rgb(190, 30, 205));
+}
+@media (max-width:800px){
+    .section2{
+        grid-template-columns: repeat(1,1fr);
+        margin:0px auto;
+    }
+}
