@@ -38,6 +38,7 @@ a{
    height: 100%;
    border: 2px solid grey;
    box-shadow: 5px 5px 12px var(--purple);
+   object-fit: cover;
 }
  .box-heading{
     color: rgb(8, 162, 209);
